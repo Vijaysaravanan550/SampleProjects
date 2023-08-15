@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right,red,orange);
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 60%;
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 0 50px 50px 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3),
+                -5px -5px 10px rgba(0, 0, 0, .3);
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header h1{
+    padding: 30px;
+}
+hr{
+    margin-bottom: 30px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.width50{
+    width: 48%;
+}
+label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input{
+    display: block;
+    margin-top: 10px;
+}
+small{
+    display: block;
+    margin-top: 5px;
+    color: rgba(128, 128, 128, 0.842);
+}
+.check{
+    display: flex;
+    justify-content: center;
+}
+.check input{
+    margin-right: 5px;
+    margin-top: 13px;
+}
+input[type="text"],input[type="number"],input[type="password"],input[type="email"]{
+    padding: 10px;
+    width: 100%;
+}
+input[type="email"]:focus{
+    background-color: lightcyan;
+}
+input[type="text"]:focus{
+    background-color: lightcyan;
+}
+input[type="number"]:focus{
+    background-color: lightcyan;
+}
+input[type="password"]:focus{
+    background-color: lightcyan;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+button{
+    margin: 0 5px;
+}
+button[type="reset"]{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: .3s;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    transition: .3s;
+}
+button[type="reset"]:hover{
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+button[type="submit"]:hover{
+    background-color: white;
+    color: blue;
+    transition: .3s;
+}
+
+@media all and (max-width:640px){
+    .flex{
+        display: block;
+    }
+    .width50{
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+}

@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* navbar */
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: black;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    padding: 17px 25px;
+}
+.nav-list li:hover{
+    background-color: bisque;
+}
+.nav-list li:hover a{
+    color: black;
+}
+.nav-list li:hover .fa-caret-down {
+    color: black;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.bars{
+    display: none;
+}
+
+.fa{
+    color: white;
+}
+.fa-caret-down{
+    padding-left: 5px;
+}
+.fa-search{
+    padding: 18px 25px;
+}
+.fa-search:hover{
+    background-color: orangered;
+}
+
+/* dropdown */
+
+.dropdown{
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 294px;
+    display: none;
+}
+.nav-list-2{
+    position: absolute;
+    left: 92px;
+}
+.dropdown li{
+    padding: 15px 25px;
+    background-color: bisque;
+}
+.dropdown li:hover{
+    background: white;
+}
+.dropdown li a{
+    color: black;
+}
+.nav-list li:hover .dropdown{
+    display: block;
+}
+
+/* ṣlider */
+
+.slide-container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.slide{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.slide img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.slide-text{
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%,0);
+   color: white;
+   text-align: center;
+}
+.slide-text h3{
+    font-size: xx-large;
+}
+.slide-text p{
+    line-height: 50px;
+}
+
+/* the band */
+.container{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 0 275px;
+}
+.text{
+    padding-top: 90px;
+}
+.text h2{
+    font-weight: 300;
+    font-size: 30x;
+    letter-spacing: 4px;
+}
+.text p{
+    padding-top: 25px;
+}
+.text p i{
+    color: gray;
+}
+#last-child{
+    text-align: justify;
+    line-height: 25px;
+    font-size: 15px;
+}
+.band-card-container{
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.band-card{
+    width: 160px;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+.band-card p{
+    padding: 10px;
+}
+.band-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#tour{
+    background-color: black;
+}
+#tour-dates{
+    color: white;
+}
+.tour-list ul{
+    list-style: none;
+    background-color: white;
+    margin-top: 40px;
+}
+.tour-list ul li{
+    border: 1px solid gray;
+    border-bottom: none;
+    padding: 10px 20px;
+    text-align: left;
+    color: gray;
+}
+.tour-list ul li span{
+    background-color: red;
+    color: white;
+    margin-left: 15px;
+    padding: 3px;
+    border-radius: 2px;
+}
+#available{
+    background-color: black;
+    border-radius: 50%;
+    padding: 3px 7px;
+    float: right;
+}
+.tour-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+.tour-card{
+    width: 255px;
+    background-color: white;
+    margin-bottom: 90px;
+}
+.tour-card img{
+    width: 100%;
+}
+.tour-card img:hover{
+    box-shadow: inset ;
+}
+.tour-card-text{
+    padding: 15px;
+    text-align: left;
+}
+.tour-card-text p{
+    padding-bottom: 20px;
+}
+.tour-card-text p:nth-child(2){
+    color: gray;
+}
+.tour-card-text button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 17px;
+}
+.contect-content{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.contect-text{
+    text-align: left;
+    font-size: 17px;
+}
+.contect-text i{
+    color: black;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.contect-input{
+    width: 400px;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    opacity: .8;
+}
+.input-row-1{
+    display: flex;
+    gap: 10px;
+}
+.input-row-2 button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 100;
+    border: none;
+    float: right;
+}
+.footer{
+    text-align: center;
+    padding: 70px 0;
+}
+.footer i{
+    color: black;
+    margin-bottom: 25px;
+    padding-right: 10px;
+}
+.footer p,.footer p a{
+    color: gray;
+    font-size: 14px;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(212, 207, 207);
+    color: black;
+}
+a{
+    cursor: pointer;
+}
+
+
+.ticket-model{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    box-shadow: 0 100px 100px 300px rgba(0, 0, 0, 0.322);
+    z-index: 1;
+    display: none;
+}
+.header{
+    width: 100%;
+    height: 20vh;
+    background-color:teal;
+    position: fixed;
+    top: 0;
+}
+.header h2{
+    text-align: center;
+    margin-top: 8vh;
+    font-size: xx-large;
+    color: white;
+}
+.header i{
+    margin-right: 15px;
+}
+.header span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 15px;
+    color: white;
+}
+.header span:hover{
+    background-color: rgb(212, 207, 207);
+    color: black;
+}
+.ticket-model-content{
+    position: absolute;
+    top: 20vh;
+    padding: 15px;
+    width: 100%;
+}
+.ticket-model-content p,.ticket-model-content input{
+    margin-bottom: 20px;
+}
+.ticket-model-content p i{
+    color: black;
+    padding-right: 10px;
+}
+#pay{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-size: larger;
+}
+#pay:hover{
+    background-color: rgb(212, 207, 207);
+    color: black;
+}
+#pay:hover i{
+    color: black;
+}
+#close{
+    padding: 10px 15px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-top: 40px;
+}
+#close:hover{
+    background-color: rgb(212, 207, 207);
+    color: black;
+}
+#close:hove i{
+    color: black;
+}
+.ticket-model-content p:last-child{
+    text-align: end;
+    margin-top: -40px;
+}
+.ticket-model-content p a{
+    padding-left: 5px;
+    color: rgb(16, 154, 209);
+}
+
+
+/* mobile screen */
+
+@media all and (max-width: 640px){
+    .search{
+        display: none;
+    }
+    .bars{
+        display: block;
+        padding: 18px 25px;
+    }
+    .bars:hover{
+        background-color: bisque;
+    }
+    .bars:hover i{
+        color: black;
+    }
+    .nav-list{
+        display: block;
+    }
+    .nav-list-2{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+        z-index: 1;
+    }
+    .nav-list-2 li{
+        background-color: black;
+    }
+    .nav-list-2 li:hover a{
+        color: white;
+    }
+    .nav-list-2 li:hover{
+        background-color: black;
+    }
+    .dropdown{
+        position: absolute;
+        top: 200px;
+        left: 0;
+    }
+    .nav-list-2-visible{
+        display: block;
+    }
+    .nav-list-2-hide{
+        display: none;
+    }
+    .slide-container{
+        height:auto;
+    }
+    .slide-text{
+        display: none;
+    }
+    .container{
+        padding: 15px;
+    }
+    #band{
+        margin-top: 180px;
+    }
+    .band-card{
+        width: 200px;
+    }
+    .tour-card{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .tour-card img{
+        width: 100%;
+    }
+    .tour-card-container{
+        margin-bottom: 80px;
+    }
+    .contect-content{
+        display: block;
+    }
+    .contect-input{
+        width: auto;
+        margin-top: 10px;
+    }
+    .input-row-1{
+        display: block;
+    }
+    .map img{
+        width: 100%;
+    }
+    .ticket-model{
+        width: 95%;
+        position: fixed;
+        top: 36%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 62vh;
+    }
+}

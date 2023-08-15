@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+}
+h4{
+    font-size: 20px;
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #696a6bee;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.205);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar li{
+    padding: 0px 20px;
+    list-style: none;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    transition: 0.3s;
+}
+#mobile{
+    display: none;
+}
+#mobile i{
+    font-size: 24px;
+}
+#close{
+    display: none;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: black;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    bottom:-4px;
+}
+#hero{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    align-items: flex-start;
+    justify-content:center;
+    background-color: cadetblue;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color:  #696a6bee;
+}
+#hero button{
+    border: 1px solid  #696a6bee;;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: white;
+    background-color:  #696a6bee;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+#hero button:hover{
+    color:  #696a6bee;;
+    background-color: white;
+}
+#feature{
+    display: flex;
+    justify-content: space-between;
+}
+#feature .fe-box{
+    border: 1px solid #cce7d0;
+    width: 180px;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box .box{
+    width: 7.7vw;
+    height: 15vh;
+    background-color: rgb(220, 169, 250);
+    margin: 0px auto;
+    border-radius: 4px;
+}
+#feature .fe-box h6{
+    background-color: #fddde4;
+    margin: 10px;
+    padding: 9px 15px 6px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    color: darkred;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: blue;
+    color: lavender;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: green;
+    color: lavender;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: yellow;
+    color: darkred;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: pink;
+    color: darkred;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: orange;
+    color: lavender;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 10px 12px;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.26);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 10px 10px 30px rgba(128, 128, 128, 0.459);
+}
+.box2{
+    width: 18vw;
+    height: 40vh;
+    background-color: rgb(128, 128, 128);
+    border-radius: 20px;
+    margin: 0px auto;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    font-size: 16px;
+    color: rgb(245, 7, 173);
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    font-size: 16px;
+}
+#product1 .pro .des i{
+    font-size: 16px;
+    color: rgb(243, 181, 25);
+    padding-top: 7px;
+}
+#product1 .pro .des h4{
+    padding: 7px;
+    font-size: 19px;
+    color: red;
+    font-weight: 700;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px; 
+    background-color: #fddde4;
+    border-radius: 50%;
+    color: rgb(252, 13, 180);
+    border: 1px solid rgb(252, 13, 180);
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    cursor: pointer;
+}
+#product1 .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+#banner{
+    background-color: aquamarine;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#banner h2{
+    padding: 15px;
+}
+#banner h2 span{
+    color: blue;
+}
+.button{
+    border: 2px solid  white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: black;
+    background-color:  white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.button:hover{
+    color:  red;
+    background-color: white;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+}
+#sm-banner .banner-box{
+    background-color: aquamarine;
+    width: 48.5%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+#sm-banner .banner-box2{
+    background-color: greenyellow;
+}
+.banner-box h2{
+    padding: 8px 0;    
+}
+.banner-box span{
+    padding-bottom: 15px;
+}
+.banner-box button{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.banner-box:hover button{
+    background-color: white;
+    color: red;
+}
+#banner-3{
+    display: flex;
+    justify-content:space-between ;
+}
+#banner-3 .banner-box{
+    background-color: aquamarine;
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#banner-3 .banner-box-2{
+    background-color: lightpink;
+}
+#banner-3 .banner-box-3{
+    background-color: lightcoral;
+}
+#banner-3 .banner-box-4{
+    background-color: lightsalmon;
+}
+#banner-3 .banner-box h2{
+    font-size: 22px;
+}
+#banner-3 .banner-box h3{
+    color: red;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    margin-bottom: 0px;
+}
+#newsletter span{
+    color: brown;
+}
+#newsletter input{
+    width: 100%;
+    border: 1px solid transparent;
+    height: 45px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+}
+#newsletter button{
+    background-color: brown;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 35%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+#newsletter .form{
+    display: flex; 
+    width: 40%;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #696a6bee;
+    color: white;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    color: #c5e7d8;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #d6dbd9;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    padding-right: 4px;
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.color{
+    width: 160px;
+    height: 60px;
+    background-color: red;
+    margin: 20px 20px 20px 0;
+    border-radius: 4px;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: orangered;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        padding: 80px 0 0 10px;
+    }
+    
+    #navbar li a {
+        color: black;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #cart1{
+        display: none;
+    }
+    .add{
+        left: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    #mobile i{
+        padding-left: 20px;
+    }
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: black;
+        font-size: 24px;
+    }
+    #close{
+        display: inline;
+    }
+    #feature {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px;
+    }
+    #feature .fe-box .box {
+        width: 16vw;
+    }
+    #product1 .pro-container{
+        justify-content: center;
+    }
+    #product1 .pro {
+        height: 450px;
+        margin: 15px;
+    }
+    .box2 {
+        height: 30vh;
+        width: auto;
+    }
+    #banner{
+        height: 20vh;
+    }
+    #banner h2{
+        font-size: 35px;
+    }
+    #sm-banner {
+        flex-direction: column;
+    }
+    #sm-banner .banner-box {
+        width: 100%;
+        height: 30vh;
+    }
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #newsletter {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    #newsletter .form{
+        width: 70%;
+    }
+}
+
+@media (max-width:477px){
+    #header{
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .section-p1 {
+        padding: 20px;
+    }
+    #hero {
+        padding: 0 20px;
+    }
+    #feature{
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+        padding: 15px 0;
+    }
+    #feature .fe-box .box {
+        width: 28vw;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    .box2 {
+        height: 45vh;
+    }
+    #product1 .pro .des {
+        padding: 22px 0;
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    .banner-box2{
+        margin-top: 20px
+    }
+    #banner-3{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    #banner-3 .banner-box {
+        width: 100%;
+        height: 40vh;
+    }
+    #newsletter {
+        padding: 40px 20px;
+    }
+    #newsletter .form{
+        width: 100%;
+    }
+    footer .col {
+        margin: 20px 20px 20px 0;
+    }
+    .copyright {
+        text-align: start;
+    }
+}
